@@ -1,0 +1,10 @@
+version: '3'
+services:
+  eosio.contracts:
+    build:
+      context: .
+      args:
+        eosio_version: 1.8.6
+        cdt_version: 1.6.3
+        contracts_version: 1.7.1
+    image: eosio.contracts
